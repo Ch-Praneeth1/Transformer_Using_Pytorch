@@ -1,6 +1,5 @@
 import torch 
 import torch.nn as nn
-import math 
 from Transformer import transformer as Transformer
 from InputEmbeddings import inputEmbeddings
 from PositionalEncoding import positionalEncoding
@@ -56,5 +55,3 @@ def build_transformer(src_vocab_size: int, target_vocab_size: int, src_seq_len: 
             nn.init.xavier_uniform_(p)
 
     return transformer
-
-
